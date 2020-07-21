@@ -4,6 +4,7 @@ const fs = require('fs');
 const url = require('url');
 const nodemailer = require('nodemailer');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -24,3 +25,19 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log("Hello World");
 });
+
+
+var data = fs.readFileSync('words.json');
+var words = JSON.parse(data);
+console.log(words);
+
+app.use(bodyParser());
+
+app.post('/words', function(req, res) {
+    // res.end(JSON.stringify(words, null, 2));
+    return res.redirect('/about');
+});
+
+// app.get("/words", (req, res) => {
+
+// })

@@ -10,6 +10,7 @@
   <script src="../scripts/thankYou.js"></script>
   <script src="../scripts/validNumber.js"></script>
   <script src="../scripts/validEmail.js"></script>
+  <script scr="../scripts/tyEmail.js"></script>
   <!-- <script src="validContact.js"></script> -->
 </head>
 
@@ -22,7 +23,7 @@
   </header>
 
   <div class="form">
-    <form>
+    <form action="words" method="POST" onsubmit="tyEmail(event);">
     <!-- <form name="contactForm" onsubmit="return validContact(this);"> -->
       <label>First Name:</label>
 	    <input type="text" id="first" size="15">

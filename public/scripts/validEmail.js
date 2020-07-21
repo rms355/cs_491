@@ -5,6 +5,13 @@ function validEmail(form){
 
   if (form.value.match(regex))
   {
+    // var data = JSON.stringify(words, null, 2);
+    // fs.writeFile('words.json', data, finished);
+
+    // function finished(err) {
+    //   console.log('all set.');
+    // }
+
     return true;
   }
   else
@@ -14,4 +21,4 @@ function validEmail(form){
     // form.elements["email"].focus();
     return false;
   }
-                             }  // end validEmail
+}  // end validEmail
