@@ -2,6 +2,7 @@
 
 function thankYou(form) {
   alert("Thank you for taking the time to fill this out. I appreciate it!");
+  onSubmit();
   form.reset();
   form.elements["first"].focus();
-                        } // end thankYou
+} // end thankYou

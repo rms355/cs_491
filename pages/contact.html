@@ -10,11 +10,11 @@
   <script src="../scripts/thankYou.js"></script>
   <script src="../scripts/validNumber.js"></script>
   <script src="../scripts/validEmail.js"></script>
-  <script scr="../scripts/tyEmail.js"></script>
-  <!-- <script src="validContact.js"></script> -->
+  <script src="../scripts/tyEmail.js"></script>
+  <script src="../scripts/addData.js"></script>
 </head>
 
-<body>
+<body>  
   <header>
     <h1>Project 3</h1>
 
@@ -23,7 +23,8 @@
   </header>
 
   <div class="form">
-    <form action="words" method="POST" onsubmit="tyEmail(event);">
+    <form id="contactForm">
+    <!-- onsubmit="tyEmail(event);" -->
     <!-- <form name="contactForm" onsubmit="return validContact(this);"> -->
       <label>First Name:</label>
 	    <input type="text" id="first" size="15">
@@ -46,9 +47,8 @@
       <!-- disabled> -->
   		<label>Comments:</label>
   		<textarea id="comments" cols="30" rows="6"></textarea>
-  		<br><br>
-      <input type="button" value="Submit" onclick="return !!(validNumber(phone) && validEmail(email) && thankYou(this.form));">
-  		<!-- <input type="submit" value="Submit" onclick="return validContact(this.form);"> -->
+      <br><br>
+      <input type="button" id="button" value="Submit" onclick="return !!(validNumber(phone) && validEmail(email) && thankYou(this.form));">
   		<input type="reset" value="Reset">
     </form>
   </div>

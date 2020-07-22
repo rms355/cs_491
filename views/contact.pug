@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    h1 #{title}
+    
+    header
+      h1 Project 3
+      // Menu goes here
+      a(href='/') Home
+      |  
+      a(href='about.html') About
+      |  
+      a(href='game.html') Game
+      |  | Contact
+
+      form(action="/submit-contact")
+        // <form name="contactForm" onsubmit="return validContact(this);">
+        label First Name:
+        input(type='text', name="first", size="15")
+        // onchange = "this.form.elements['last'].disabled=false;"
+        label Last Name:
+        input(type='text', name="last", size="15")
+        // disabled onchange = "this.form.elements['address'].disabled=false;">
+        br
+        label Address:
+        input(type='text', name="address", size="15")
+        // disabled onchange = "this.form.elements['phone'].disabled=false;">
+        label Phone:
+        input(type='text', name="phone", size="15")
+        br
+        // disabled onchange = "this.form.elements['email'].disabled=false;">
+        label E-mail:
+        input(type='text', name="email", size="15")
+        // disabled onchange =  "this.form.elements['website'].disabled=false;">
+        label Your Website:
+        input(type='text', name="website", size="15")
+        br
+        br
+        // disabled>
+        label Comments:
+        textarea#comments(cols='30', rows='6')
+        br
+        br
+        input(type="submit", name="Done")
+        //- input(type='button', value='Submit', onclick='return !!(validNumber(phone) && validEmail(email) && thankYou(this.form));')
+        //- // <input type="submit" value="Submit" onclick="return validContact(this.form);">
+        //- input(type='reset', value='Reset')
