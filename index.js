@@ -58,7 +58,11 @@ console.log(words);
 //     })
 // });
 
-// var urlencodedParser = bodyParser.urlencoded({ extended: false });
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+app.post('/contact', urlencodedParser, function(req, res){
+    console.log(req.body);
+    res.render('contact', {qs: req.query});
+});
 
 // app.post('/pages/contact', urlencodedParser, function(req, res){
 //     console.log(req.body);
@@ -93,3 +97,31 @@ app.get('/views', function(req, res){
         title:'Articles'
     });
 });
+
+
+
+// E-mail
+
+var transporter = nodemailer.createTransport({
+    service:'gmail',
+    auth:{
+        user:'rms355@gmail.com',
+        pass:'yijukcnnfaqhbhnq'
+    }
+});
+
+// var mailOptions = {
+//     from:'rms355@gmail.com',
+//     to:'rms355@gmail.com',
+//     subject:'Node JS Test Mail',
+//     text:'This is test mail from node.js app.'
+// };
+
+// transporter.sendMail(mailOptions, function(err, info){
+//     if(err){
+//         console.log(err);
+//     }
+//     else{
+//         console.log('E-mail sent:' + info.response);
+//     }
+// });

@@ -1,7 +1,6 @@
+var contactData = [];
 
 function onSubmit() {
-
-    var contactData = [];
     var fName = document.getElementById("first").value;
     var lName = document.getElementById("last").value;
     var adDre = document.getElementById("address").value;
@@ -10,23 +9,21 @@ function onSubmit() {
     var webSite = document.getElementById("website").value;
     var comm = document.getElementById("comments").value;
 
-
     var stuObj = {first:fName, last:lName, address:adDre, phone:pho, email:eMail, website:webSite, comments:comm};
-    // contactData.push(stuObj);
+    contactData.push(stuObj);
     
-    // console.log(contactData);
+    console.log(contactData);
 
-    // debugger;
-    localStorage.contactRecord = JSON.stringify(stuObj);
-    console.log(localStorage.contactRecord);
+
+    localStorage.contactRecord = JSON.stringify(contactData);
     
-    var jsonString = localStorage.getItem("contactRecord");
+    
+    var jsonString = localStorage.getItem(localStorage.contactRecord.email);
     
     var retrieveObject = JSON.parse(jsonString);
-    console.log(retrieveObject.email);
+    console.log(retrieveObject);
     // console.log(retrieveObject.fName);
     console.log("Hello World!");
-    return retrieveObject.email;
 }
 
 
