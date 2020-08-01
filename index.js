@@ -7,6 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const { response } = require('express');
 const qs = require('querystring');
+require('dotenv').config();
 
 const app = express();
 
@@ -102,8 +103,8 @@ app.post('/contact', function(req, res) {
   var transporter = nodemailer.createTransport({
       service:'gmail',
       auth:{
-          user:'rms355@gmail.com',
-          pass:'yijukcnnfaqhbhnq'
+          user: process.env.EMAIL,
+          pass: process.env.EMAIL_PASS
       }
   });
   
