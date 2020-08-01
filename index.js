@@ -28,39 +28,29 @@ app.listen(port, () => {
     // console.log("Hello World");
 });
 
-// var jsonParser = bodyParser.json();
-// var urlencodedParser = bodyParser.urlencoded({extended: false});
+
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json());
 
 
-// app.post('/contact2', (req, res) => {
-//   console.log('Data: ', req.query.email);
+// app.get('/contact', (req, res) => {
+//   console.log('Data: ', req.query);
 //   return res.send(req.query);
 // });
 
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 app.get('/contact', function(request, response) {
   console.log('GET /')
-  // var html = `
-  //   <html>
-  //       <body>
-  //           <form method="post" action="http://localhost:3000"> 
-  //               <input type="text" name="name" />
-  //               <input type="submit" value="Submit" />
-  //           </form>
-  //       </body>
-  //   </html>`
-  response.writeHead(200, {'Content-Type': 'text/html'})
-  response.end(html)
+  // response.writeHead(200, {'Content-Type': 'text/html'})
+  // response.end(html)
 })
 
 app.post('/contact', function(request, response) {
   console.log('POST /')
   console.dir(request.body)
-  response.writeHead(200, {'Content-Type': 'text/html'})
-  response.end('thanks')
+  // response.writeHead(200, {'Content-Type': 'text/html'})
+  // response.end('thanks')
 })
 
 

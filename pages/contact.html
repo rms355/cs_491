@@ -22,7 +22,7 @@
     </header>
 
     <div class="form">
-      <form id="contactForm" method="post" action="/contact" onsubmit="return !!(validNumber(phone) && validEmail(email) && thankYou(this.form));">
+      <form id="contactForm" method="POST" action="/contact" onsubmit="return !!(validNumber(phone) && validEmail(email) && thankYou(this.form));">
         <label>First Name:</label>
         <input type="text" name="first" size="15">
         <label>Last Name:</label>
