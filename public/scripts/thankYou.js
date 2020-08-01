@@ -3,8 +3,10 @@
 function thankYou(form) {
   alert("Thank you for taking the time to fill this out. I appreciate it!");
   
-  var returnEmail=onSubmit();
-  console.log(returnEmail);
+  // var returnEmail=onSubmit();
+  // console.log(returnEmail);
+
+  // tyEmail();
 
   form.reset();
   form.elements["first"].focus();

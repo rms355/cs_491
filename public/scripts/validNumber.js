@@ -10,8 +10,8 @@ function validNumber(form){
     }
     else {
       alert("Not a valid phone number");
-      // form.elements["email"].reset();
+      // form.elements["phone"].reset();
       // form.elements["phone"].focus();
       return false;
     }
-                              } // end validNumber
+} // end validNumber

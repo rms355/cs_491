@@ -17,7 +17,7 @@ function validEmail(form){
   else
   {
     alert("Not a valid e-mail");
-    form.elements["email"].reset();
+    // form.elements["email"].reset();
     // form.elements["email"].focus();
     return false;
   }
