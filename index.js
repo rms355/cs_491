@@ -39,53 +39,6 @@ app.use(bodyParser.json());
 // });
 
 
-
-app.get('/contact', function(request, response) {
-  console.log('GET /')
-  // response.writeHead(200, {'Content-Type': 'text/html'})
-  // response.end(html)
-})
-
-app.post('/contact', function(request, response) {
-  console.log('POST /')
-  console.dir(request.body)
-  // response.writeHead(200, {'Content-Type': 'text/html'})
-  // response.end('thanks')
-})
-
-
-// var data = fs.readFileSync('words.json');
-// var words = JSON.parse(data);
-// console.log(words);
-
-
-// app.post('contact', urlencodedParser, function(req, res) {
-//     console.log(req.body);
-//     res.render('contact', {qs: req.query});
-// });
-
-
-// app.post('/contact.html', (req, res) => {
-//     console.log('Data: ', req.body,first);
-// });
-
-
-// app.use(bodyParser());
-
-// app.post('/words', function(req, res) {
-//     // res.end(JSON.stringify(words, null, 2));
-//     return res.redirect('/about');
-// });
-
-// app.get("/words", (req, res) => {
-
-// })
-
-// app.use(express.urlencoded({
-//     extended: false
-// }));
-// app.use(express.json());
-
 // app.post('/email', (req, res) => {
 //     res.json({ 
 //         message: 'Message!'
@@ -125,54 +78,51 @@ app.post('/contact', function(request, response) {
 //         }
 //     });
 
-// app.get('/', function(req, res) {
-//     return res.redirect('/contact');
-// });
 
-// app.get('/contact', function(req, res) {
-//     return res.render('contactForm')
-// });
+app.get('/contact', function(req, res) {
+  console.log('GET /')
+});
 
-// app.get('/contact', function(req, res) {
-//     return res.render('contact');
-// });
+app.post('/contact', function(req, res) {
+  console.log('POST /')
+  console.dir(req.body)
 
-// app.get('/submit', function(req, res) {
-//     return res.send(req.query);
-// });
+  const emailBody = `
+    <p>
+    Dear ${req.body.first} ${req.body.last},
+    <br><br>
+    Thank you for your feedback!
+    <br><br><br>
+    -From ryan-stefan@http://node-env.eba-zupmejhc.us-east-1.elasticbeanstalk.com/contact.html
+    </p>  
+  `;
 
-// app.get('/submit', function(req, res) {
-//     return res.send(req.body.first);
-//     console.log(req.body.first);
-// });
-
-// E-mail
-
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
-
-// var transporter = nodemailer.createTransport({
-//     service:'gmail',
-//     auth:{
-//         user:'rms355@gmail.com',
-//         pass:'yijukcnnfaqhbhnq'
-//     }
-// });
-
-
-
-// var mailOptions = {
-//     from:'rms355@gmail.com',
-//     to:'rms355@gmail.com',
-//     subject:'Node JS Test Mail',
-//     text:'This is test mail from node.js app.'
-// };
-
-// transporter.sendMail(mailOptions, function(err, info){
-//     if(err){
-//         console.log(err);
-//     }
-//     else{
-//         console.log('E-mail sent:' + info.response);
-//     }
-// });
+  // E-mail
+  
+  var transporter = nodemailer.createTransport({
+      service:'gmail',
+      auth:{
+          user:'rms355@gmail.com',
+          pass:'yijukcnnfaqhbhnq'
+      }
+  });
+  
+  
+  
+  var mailOptions = {
+      from: '"Ryan Stefan" <rms355@gmail.com>',
+      to: req.body.email,
+      subject: 'Project 4 - Test E-mail',
+      html: emailBody
+  };
+  
+  transporter.sendMail(mailOptions, function(err, info){
+      if(err){
+          console.log(err);
+      }
+      else{
+          console.log('E-mail sent:' + info.response);
+      }
+  });
+  res.redirect('back');
+});
