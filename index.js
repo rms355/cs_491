@@ -7,8 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const { response } = require('express');
 const qs = require('querystring');
-const { getMaxListeners } = require('process');
-// require('dotenv').config();
+require('dotenv').config();
 
 const app = express();
 
@@ -59,9 +58,7 @@ app.post('/contact', function(req, res) {
       service:'gmail',
       auth:{
           user: process.env.EMAIL,
-          pass: process.env.EMAIL_PASS          
-          user: 'rms355@gmail.com',
-          pass: 'yijukcnnfaqhbhnq'
+          pass: process.env.EMAIL_PASS
       }
   });
   
