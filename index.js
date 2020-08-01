@@ -34,52 +34,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 
-// app.get('/contact', (req, res) => {
-//   console.log('Data: ', req.query);
-//   return res.send(req.query);
-// });
-
-
-// app.post('/email', (req, res) => {
-//     res.json({ 
-//         message: 'Message!'
-//     })
-// });
-
-// var urlencodedParser = bodyParser.urlencoded({ extended: false });
-// app.post('/contact', urlencodedParser, function(req, res){
-//     console.log(req.body);
-//     res.render('contact', {qs: req.query});
-// });
-
-// app.post('/pages/contact', urlencodedParser, function(req, res){
-//     console.log(req.body);
-//     res.render('/pages/contact', {qs: req.query});
-// });
-
-
-// app.set('views', path.join(__dirname, 'views'));
-
-// app.get('/views', function(req, res){
-//     res.render('contact', {
-//         title:'Articles'
-//     });
-// });
-
-
-// app.post('/pages/contact.html', (req, res) => {
-//     //TODO:
-//     //send email here
-//     console.log('Data: ', req.body.first, req.body.last, req.body.email);
-//     var transporter = nodemailer.createTransport({
-//         service: 'gmail',
-//         auth: {
-//             user: 'black@gmail.com',
-//             pass: 'xxxxx'
-//         }
-//     });
-
-
 app.get('/contact', function(req, res) {
   console.log('GET /')
 });
