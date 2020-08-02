@@ -1,0 +1,159 @@
+2020-08-02 03:49:35,103 [INFO] -----------------------Starting build-----------------------
+2020-08-02 03:49:35,110 [INFO] Running configSets: _OnInstanceBoot
+2020-08-02 03:49:35,114 [INFO] Running configSet _OnInstanceBoot
+2020-08-02 03:49:35,117 [INFO] Running config AWSEBBaseConfig
+2020-08-02 03:49:35,307 [INFO] Command clearbackupfiles succeeded
+2020-08-02 03:49:35,312 [INFO] Running config AWSEBCfnHupEndpointOverride
+2020-08-02 03:49:35,318 [INFO] Command clearbackupfiles succeeded
+2020-08-02 03:49:35,319 [INFO] ConfigSets completed
+2020-08-02 03:49:35,320 [INFO] -----------------------Build complete-----------------------
+2020-08-02 03:49:40,527 [INFO] -----------------------Starting build-----------------------
+2020-08-02 03:49:40,535 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 03:49:40,538 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 03:49:40,538 [INFO] ConfigSets completed
+2020-08-02 03:49:40,538 [INFO] -----------------------Build complete-----------------------
+2020-08-02 03:50:42,940 [INFO] -----------------------Starting build-----------------------
+2020-08-02 03:50:42,947 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 03:50:42,950 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 03:50:42,950 [INFO] ConfigSets completed
+2020-08-02 03:50:42,950 [INFO] -----------------------Build complete-----------------------
+2020-08-02 06:48:04,105 [INFO] -----------------------Starting build-----------------------
+2020-08-02 06:48:04,112 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 06:48:04,116 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 06:48:04,116 [INFO] ConfigSets completed
+2020-08-02 06:48:04,116 [INFO] -----------------------Build complete-----------------------
+2020-08-02 06:48:38,206 [INFO] -----------------------Starting build-----------------------
+2020-08-02 06:48:38,213 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 06:48:38,216 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 06:48:38,216 [INFO] ConfigSets completed
+2020-08-02 06:48:38,217 [INFO] -----------------------Build complete-----------------------
+2020-08-02 07:21:03,063 [INFO] -----------------------Starting build-----------------------
+2020-08-02 07:21:03,070 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 07:21:03,073 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 07:21:03,073 [INFO] ConfigSets completed
+2020-08-02 07:21:03,073 [INFO] -----------------------Build complete-----------------------
+2020-08-02 07:21:31,719 [INFO] -----------------------Starting build-----------------------
+2020-08-02 07:21:31,729 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 07:21:31,732 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 07:21:31,733 [INFO] ConfigSets completed
+2020-08-02 07:21:31,733 [INFO] -----------------------Build complete-----------------------
+2020-08-02 07:28:35,556 [INFO] -----------------------Starting build-----------------------
+2020-08-02 07:28:35,563 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 07:28:35,566 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 07:28:35,566 [INFO] ConfigSets completed
+2020-08-02 07:28:35,567 [INFO] -----------------------Build complete-----------------------
+2020-08-02 07:29:04,065 [INFO] -----------------------Starting build-----------------------
+2020-08-02 07:29:04,072 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 07:29:04,076 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 07:29:04,076 [INFO] ConfigSets completed
+2020-08-02 07:29:04,076 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:21:38,163 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:21:38,170 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 20:21:38,174 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 20:21:38,174 [INFO] ConfigSets completed
+2020-08-02 20:21:38,174 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:22:06,902 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:22:06,909 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 20:22:06,912 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 20:22:06,912 [INFO] ConfigSets completed
+2020-08-02 20:22:06,912 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:40:03,406 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:40:03,413 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 20:40:03,416 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 20:40:03,417 [INFO] ConfigSets completed
+2020-08-02 20:40:03,417 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:40:31,739 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:40:31,746 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 20:40:31,750 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 20:40:31,750 [INFO] ConfigSets completed
+2020-08-02 20:40:31,751 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:55:10,706 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:55:10,713 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 20:55:10,716 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 20:55:10,717 [INFO] ConfigSets completed
+2020-08-02 20:55:10,717 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:55:39,158 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:55:39,165 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 20:55:39,168 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 20:55:39,169 [INFO] ConfigSets completed
+2020-08-02 20:55:39,169 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:56:17,545 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:56:17,552 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 20:56:17,556 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 20:56:17,556 [INFO] ConfigSets completed
+2020-08-02 20:56:17,556 [INFO] -----------------------Build complete-----------------------
+2020-08-02 20:56:46,025 [INFO] -----------------------Starting build-----------------------
+2020-08-02 20:56:46,032 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 20:56:46,035 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 20:56:46,036 [INFO] ConfigSets completed
+2020-08-02 20:56:46,036 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:23:51,725 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:23:51,733 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:23:51,736 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:23:51,736 [INFO] ConfigSets completed
+2020-08-02 21:23:51,736 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:24:20,141 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:24:20,148 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:24:20,151 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:24:20,151 [INFO] ConfigSets completed
+2020-08-02 21:24:20,152 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:27:29,486 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:27:29,493 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:27:29,496 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:27:29,497 [INFO] ConfigSets completed
+2020-08-02 21:27:29,497 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:27:58,098 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:27:58,105 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:27:58,108 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:27:58,108 [INFO] ConfigSets completed
+2020-08-02 21:27:58,108 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:32:21,771 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:32:21,778 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:32:21,781 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:32:21,782 [INFO] ConfigSets completed
+2020-08-02 21:32:21,782 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:32:50,139 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:32:50,146 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:32:50,149 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:32:50,149 [INFO] ConfigSets completed
+2020-08-02 21:32:50,149 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:35:17,495 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:35:17,502 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:35:17,505 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:35:17,505 [INFO] ConfigSets completed
+2020-08-02 21:35:17,505 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:38:31,158 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:38:31,166 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:38:31,169 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:38:31,169 [INFO] ConfigSets completed
+2020-08-02 21:38:31,169 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:38:59,796 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:38:59,803 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:38:59,807 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:38:59,807 [INFO] ConfigSets completed
+2020-08-02 21:38:59,807 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:40:09,746 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:40:09,754 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:40:09,758 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:40:09,758 [INFO] ConfigSets completed
+2020-08-02 21:40:09,758 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:40:38,194 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:40:38,201 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:40:38,204 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:40:38,205 [INFO] ConfigSets completed
+2020-08-02 21:40:38,205 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:45:33,808 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:45:33,815 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:45:33,818 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:45:33,819 [INFO] ConfigSets completed
+2020-08-02 21:45:33,819 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:52:24,960 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:52:24,967 [INFO] Running configSets: Infra-EmbeddedPreBuild
+2020-08-02 21:52:24,970 [INFO] Running configSet Infra-EmbeddedPreBuild
+2020-08-02 21:52:24,970 [INFO] ConfigSets completed
+2020-08-02 21:52:24,970 [INFO] -----------------------Build complete-----------------------
+2020-08-02 21:52:53,435 [INFO] -----------------------Starting build-----------------------
+2020-08-02 21:52:53,442 [INFO] Running configSets: Infra-EmbeddedPostBuild
+2020-08-02 21:52:53,446 [INFO] Running configSet Infra-EmbeddedPostBuild
+2020-08-02 21:52:53,446 [INFO] ConfigSets completed
+2020-08-02 21:52:53,446 [INFO] -----------------------Build complete-----------------------
