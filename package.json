@@ -2,9 +2,6 @@
   "name": "cs_491",
   "version": "1.0.0",
   "main": "index.js",
-  "engines":{
-    "node": "^12.18.3"
-  },
   "scripts": {
     "start": "node index.js"
   },
