@@ -2,9 +2,9 @@
     "name": "cs_491",
     "version": "1.0.0",
     "description": "",
-    "main": "app.js",
+    "main": "index.js",
     "scripts": {
-      "start": "start app"
+      "start": "node index.js"
     },
     "keywords": [],
     "author": "",
