@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const { response } = require('express');
 const qs = require('querystring');
-require('dotenv').config();
+// require('dotenv').config();
 
 const app = express();
 
