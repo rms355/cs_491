@@ -23,11 +23,13 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.htm'));
 });
 
+app.set('port', process.env.PORT || 3000);
+app.listen(3000);
 
-const port = process.env.PORT || 8081;
-app.listen(port, () => {
-    // console.log("Hello World");
-});
+// const port = process.env.PORT || 3000;
+// app.listen(port, () => {
+//     // console.log("Hello World");
+// });
 
 
 app.use(bodyParser.urlencoded({ extended: true }))
