@@ -36,9 +36,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 
-app.get('/contact', function(req, res) {
-  console.log('GET /')
-});
+// app.get('/contact', function(req, res) {
+//   console.log('GET /')
+// });
 
 app.post('/contact', function(req, res) {
   console.log('POST /')
@@ -59,8 +59,8 @@ app.post('/contact', function(req, res) {
   var transporter = nodemailer.createTransport({
       service:'gmail',
       auth:{
-          user: process.env.EMAIL,
-          pass: process.env.EMAIL_PASS
+          user: rms355@gmail.com
+          pass: yijukcnnfaqhbhnq
       }
   });
   
