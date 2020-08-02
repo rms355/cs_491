@@ -2,9 +2,9 @@
     "name": "cs_491",
     "version": "1.0.0",
     "description": "",
-    "main": "server.js",
+    "main": "app.js",
     "scripts": {
-      "start": "start server.js"
+      "start": "start app"
     },
     "keywords": [],
     "author": "",
