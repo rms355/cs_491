@@ -7,7 +7,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const { response } = require('express');
 const qs = require('querystring');
-// require('dotenv').config();
+require('dotenv').config();
 
 const app = express();
 
@@ -19,12 +19,20 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use(express.static('pages'));
 app.use('/static', express.static(path.join(__dirname, 'pages')));
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/index.htm'));
-});
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname + '/index.htm'));
+// });
 
-app.set('port', process.env.PORT || 3000);
-app.listen(3000);
+app.get('/', function (req, res) {
+    res.sendfile(__dirname + '/index.htm');
+  });
+
+const port = process.env.PORT || 3000;
+const host = '0.0.0.0';
+app.listen(port, host);
+
+// app.set('port', process.env.PORT || 3000);
+// app.listen(3000);
 
 // const port = process.env.PORT || 3000;
 // app.listen(port, () => {
@@ -36,9 +44,9 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 
-// app.get('/contact', function(req, res) {
-//   console.log('GET /')
-// });
+app.get('/contact', function(req, res) {
+  console.log('GET /')
+});
 
 app.post('/contact', function(req, res) {
   console.log('POST /')
@@ -59,8 +67,8 @@ app.post('/contact', function(req, res) {
   var transporter = nodemailer.createTransport({
       service:'gmail',
       auth:{
-          user: 'rms355@gmail.com',
-          pass: 'yijukcnnfaqhbhnq'
+          user: EMAIL,
+          pass: EMAIL_PASS
       }
   });
   
