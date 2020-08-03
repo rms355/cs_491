@@ -58,7 +58,7 @@ app.post('/contact', function(req, res) {
     <br><br>
     Thank you for your feedback!
     <br><br><br>
-    -From ryan-stefan@http://node-env.eba-zupmejhc.us-east-1.elasticbeanstalk.com/contact.html
+    -From ryan-stefan@http://csapp-env.eba-6mwqezer.us-east-1.elasticbeanstalk.com/
     </p>  
   `;
 
