@@ -24,7 +24,7 @@ app.use('/static', express.static(path.join(__dirname, 'pages')));
 // });
 
 app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.htm');
+    res.sendFile(__dirname + '/index.htm');
   });
 
 const port = process.env.PORT || 3000;
